@@ -41,7 +41,7 @@ export const MenuHeader = props => {
           component="h1"
           classes={{ root: classes.title }}
         >
-          <FontAwesomeIcon icon={faBriefcase} width="0" /> Lets travel with Palak's 
+          <FontAwesomeIcon icon={faBriefcase} width="0" /> Travel Aid
         </Typography>
       </Grid>
       <Typography variant="subtitle2" color="textSecondary">

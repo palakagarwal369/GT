@@ -2,8 +2,8 @@ import React from "react";
 import { createContext, useCallback, useContext, useMemo } from "react";
 import { ThemeProvider as MUIThemeProvider } from "@material-ui/styles";
 import { CssBaseline, createMuiTheme } from "@material-ui/core";
-import blue from "@material-ui/core/colors/blue";
-import orange from "@material-ui/core/colors/orange";
+import teal from "@material-ui/core/colors/teal";
+// import teal from "@material-ui/core/colors/teal";
 
 import { COLOR_MODE_KEY } from "../constants";
 import { usePersistentState } from "../hooks";
@@ -19,8 +19,8 @@ export const ThemeContextProvider = props => {
     () =>
       createMuiTheme({
         palette: {
-          primary: blue,
-          secondary: orange,
+          primary: teal,
+          secondary: teal,
           type: colorMode
         }
       }),
