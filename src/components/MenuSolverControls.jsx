@@ -162,7 +162,7 @@ export const MenuSolverControls = ({
             </Button>
           </ButtonGroup>
         </MenuItem>
-        <MenuItem title="Delay">
+        {/* <MenuItem title="Delay">
           <Slider
             value={delay}
             onChange={onDelayChange}
@@ -173,9 +173,9 @@ export const MenuSolverControls = ({
             color="secondary"
             disabled={definingPoints || fullSpeed}
           />
-        </MenuItem>
+        </MenuItem> */}
       </MenuSection>
-      <MenuSection>
+      {/* <MenuSection>
         <MenuItem row>
           <Grid item xs={10}>
             <Typography variant="button" color="textSecondary" component="div">
@@ -230,7 +230,7 @@ export const MenuSolverControls = ({
             </>
           )}
         </MenuItem>
-      </MenuSection>
+      </MenuSection> */}
     </>
   );
 };

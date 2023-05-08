@@ -44,33 +44,7 @@ export const MenuMetrics = props => {
             color="textSecondary"
             component="div"
           >
-            Current Best:{" "}
-          </Typography>
-          <Typography
-            classes={{ root: classes.grow }}
-            align="right"
-            display="inline"
-            variant="button"
-          >
-            {best}
-          </Typography>
-          <Typography
-            classes={{ root: classes.unit }}
-            align="right"
-            display="inline"
-            variant="button"
-          >
-            km
-          </Typography>
-        </Grid>
-        <Grid item container justify="space-between">
-          <Typography
-            display="inline"
-            variant="button"
-            color="textSecondary"
-            component="div"
-          >
-            Evaluating:{" "}
+            Total Distance:{" "}
           </Typography>
           <Typography
             classes={{ root: classes.grow }}
@@ -97,7 +71,7 @@ export const MenuMetrics = props => {
             color="textSecondary"
             component="div"
           >
-            Travel time:{" "}
+            Travel time (Approx):{" "}
           </Typography>
           <Typography
             classes={{ root: classes.grow }}
@@ -105,7 +79,7 @@ export const MenuMetrics = props => {
             display="inline"
             variant="button"
           >
-            {evaluating/60 || ""}
+            {Math.ceil(evaluating/50) || ""}
           </Typography>
           <Typography
             classes={{ root: classes.unit }}
@@ -115,6 +89,7 @@ export const MenuMetrics = props => {
           >
             hr
           </Typography>
+          <i>*travel time is calculated in accordance with average economy speed ie 50KMPH.</i>
         </Grid>
       </MenuItem>
     </MenuSection>
